@@ -1,35 +1,23 @@
 ﻿using Aspose.Cells;
 using Microsoft.Extensions.Configuration;
 using System;
-using static Org.BouncyCastle.Math.EC.ECCurve;
+using Unitas.Framework;
 
-public class ExcelAsposeExample
+
+public class ExcelServiceManager
 {
     private readonly IConfiguration _config;
 
-    public ExcelAsposeExample(IConfiguration config)
+    public ExcelServiceManager(IConfiguration config)
     {
         _config = config;
     }
-    public static void UpdateAndRecalculate(string filePath, string sheetName, string cellRef, string newValue)
+    public void UpdateAndRecalculate(string filePath, string sheetName, string cellRef, string newValue)
     {
-        // Load workbook
         Workbook workbook = new Workbook(filePath);
-
-        // Access the worksheet
-        Worksheet sheet = workbook.Worksheets[sheetName];
-
-        // Update cell value (dropdown or normal)
+        Worksheet sheet = workbook.Worksheets[sheetName];       
         sheet.Cells[cellRef].PutValue(newValue);
-
-        // Recalculate all formulas in the workbook
         workbook.CalculateFormula();
-
-        // Example: Read dependent formula cell (say "C5" changes when dropdown "B2" changes)
-        var dependentCell = sheet.Cells["C5"];
-        Console.WriteLine($"Updated value in C5: {dependentCell.StringValue}");
-
-        // Save updated file
         workbook.Save(filePath);
     }
 

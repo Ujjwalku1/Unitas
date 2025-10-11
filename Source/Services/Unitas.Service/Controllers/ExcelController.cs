@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Unitas.Framework;
 using Unitas.Service.Model;
-using static Org.BouncyCastle.Math.EC.ECCurve;
+
 
 namespace Unitas.Service.Controllers
 {
@@ -16,15 +16,18 @@ namespace Unitas.Service.Controllers
         private readonly ILogger<ExcelController> _logger;
         private const string FileBaseName = "Unitas.xlsx";
         private const int MaxBackupFiles = 10;
-      
+        private readonly ExcelServiceManager _ExcelServiceManager;
 
 
-        public ExcelController(ExcelService excelService, IWebHostEnvironment env, ILogger<ExcelController> logger)
+
+
+        public ExcelController(ExcelService excelService, IWebHostEnvironment env, ExcelServiceManager excelServiceManager, ILogger<ExcelController> logger)
         {
             _excelService = excelService;
             _env = env;
-            _logger = logger;         
-        } 
+            _logger = logger;
+            _ExcelServiceManager = excelServiceManager;
+        }
 
         [HttpPost("update-excel")]
         public IActionResult UpdateAndReadExcel(List<RequestModel> model)
@@ -52,18 +55,12 @@ namespace Unitas.Service.Controllers
                 if (model?.Any() == true)
                 {
                     foreach (var request in model)
-                    {
-                       // ExcelNPOIExample.UpdateAndRecalculate(copiedFilePath, request.sheet, request.cell, request.value);
-                         ExcelAsposeExample.UpdateAndRecalculate(copiedFilePath, request.sheet, request.cell, request.value);
-                        // _excelService.UpdateCell(copiedFilePath, request.sheet, request.cell, request.value);
+                    {                      
+                        _ExcelServiceManager.UpdateAndRecalculate(copiedFilePath, request.sheet, request.cell, request.value);                     
                         _logger.LogInformation("Updated cell {Cell} in sheet {Sheet} with value '{Value}'", request.cell, request.sheet, request.value);
                     }
                 }
-
-               // var excelService = new ExcelNpoiService(_config);
-                //var result = _ExcelNpoiService.ReadSectionData(copiedFilePath);
-
-              var result = _excelService.ReadSectionData(copiedFilePath);
+                var result = _ExcelServiceManager.ReadSectionData_Aspose(copiedFilePath);
                 _logger.LogInformation("Successfully read section data from: {CopiedFilePath}", copiedFilePath);
 
                 CleanOldFiles(tempDirectory, FileRetentionDays);
@@ -76,18 +73,6 @@ namespace Unitas.Service.Controllers
                 return StatusCode(500, $"Internal Server Error: {ex.Message}");
             }
         }
-
-
-        //[HttpGet("get-records")]
-        //public IActionResult GetRecords(string FileName)
-        //{
-        //    string filePath = Path.Combine(_env.WebRootPath, "Upload", "Templates", "Unitas Loan Sizer.xlsx");
-
-        //    var result = _excelService.ReadSectionData(filePath); 
-
-        //    return Ok(result);
-
-        //} 
 
         [HttpPost]
         [Route("upload")]

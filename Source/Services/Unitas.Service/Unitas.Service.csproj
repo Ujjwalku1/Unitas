@@ -15,7 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Framework\Unitas.FrameTest\Unitas.FrameTest.csproj" />
     <ProjectReference Include="..\..\Framework\Unitas.Framework\Unitas.Framework.csproj" />
   </ItemGroup>
 
