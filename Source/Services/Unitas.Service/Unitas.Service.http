@@ -1,0 +1,6 @@
+@Unitas.Service_HostAddress = http://localhost:5027
+
+GET {{Unitas.Service_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
