@@ -1,5 +1,7 @@
 ﻿using Aspose.Cells;
+using DocumentFormat.OpenXml.Office2016.Excel;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using System;
 using Unitas.Framework;
 
@@ -7,20 +9,30 @@ using Unitas.Framework;
 public class ExcelServiceManager
 {
     private readonly IConfiguration _config;
-
-    public ExcelServiceManager(IConfiguration config)
+    private readonly ILogger<ExcelServiceManager> _logger;
+    public ExcelServiceManager(IConfiguration config, ILogger<ExcelServiceManager> logger)
     {
         _config = config;
+        _logger = logger;
     }
     public void UpdateAndRecalculate(string filePath, string sheetName, string cellRef, string newValue)
     {
-        Workbook workbook = new Workbook(filePath);
-        Worksheet sheet = workbook.Worksheets[sheetName];       
-        sheet.Cells[cellRef].PutValue(newValue);
-        workbook.CalculateFormula();
-        workbook.Save(filePath);
-    }
+        try
+        {
+            Aspose.Cells.License license = new Aspose.Cells.License();
+            license.SetLicense("Aspose.Cells.lic");
 
+            Workbook workbook = new Workbook(filePath);
+            Worksheet sheet = workbook.Worksheets[sheetName];
+            sheet.Cells[cellRef].PutValue(newValue);
+            workbook.CalculateFormula();
+            workbook.Save(filePath);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogInformation("UpdateAndRecalculate'{Message}:{StackTrace}'", ex.Message, ex.StackTrace);
+        }
+    }
     public Dictionary<string, List<ExcelKeyValue>> ReadSectionData_Aspose(string filePath)
     {
         var result = new Dictionary<string, List<ExcelKeyValue>>();

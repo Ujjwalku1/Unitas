@@ -1,0 +1,479 @@
+2025-10-12 11:11:20.331 +05:30 [WRN] Overriding address(es) 'http://localhost:8801'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-10-12 11:11:20.399 +05:30 [INF] Now listening on: http://localhost:8801
+2025-10-12 11:11:20.416 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-12 11:11:20.416 +05:30 [INF] Hosting environment: Development
+2025-10-12 11:11:20.416 +05:30 [INF] Content root path: D:\Application\Kausar Ansari\Unitas\Source\Services\Unitas.Service
+2025-10-12 11:11:21.126 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:8801/ - null null
+2025-10-12 11:11:21.245 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:8801/ - 404 0 null 126.9048ms
+2025-10-12 11:11:21.246 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:8801/, Response status code: 404
+2025-10-12 11:14:17.355 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:8801/api/Excel/update-excel - application/json 916
+2025-10-12 11:14:17.357 +05:30 [INF] Executing endpoint 'Unitas.Service.Controllers.ExcelController.UpdateAndReadExcel (Unitas.Service)'
+2025-10-12 11:14:17.394 +05:30 [INF] Route matched with {action = "UpdateAndReadExcel", controller = "Excel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateAndReadExcel(System.Collections.Generic.List`1[Unitas.Service.Model.RequestModel]) on controller Unitas.Service.Controllers.ExcelController (Unitas.Service).
+2025-10-12 11:14:17.413 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-10-12 11:14:17.427 +05:30 [INF] Executed action Unitas.Service.Controllers.ExcelController.UpdateAndReadExcel (Unitas.Service) in 30.629ms
+2025-10-12 11:14:17.427 +05:30 [INF] Executed endpoint 'Unitas.Service.Controllers.ExcelController.UpdateAndReadExcel (Unitas.Service)'
+2025-10-12 11:14:17.427 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:8801/api/Excel/update-excel - 400 null application/problem+json; charset=utf-8 72.4688ms
+2025-10-12 11:14:19.305 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:8801/api/Excel/update-excel - application/json 916
+2025-10-12 11:14:19.306 +05:30 [INF] Executing endpoint 'Unitas.Service.Controllers.ExcelController.UpdateAndReadExcel (Unitas.Service)'
+2025-10-12 11:14:19.306 +05:30 [INF] Route matched with {action = "UpdateAndReadExcel", controller = "Excel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateAndReadExcel(System.Collections.Generic.List`1[Unitas.Service.Model.RequestModel]) on controller Unitas.Service.Controllers.ExcelController (Unitas.Service).
+2025-10-12 11:14:19.308 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-10-12 11:14:19.308 +05:30 [INF] Executed action Unitas.Service.Controllers.ExcelController.UpdateAndReadExcel (Unitas.Service) in 1.8068ms
+2025-10-12 11:14:19.308 +05:30 [INF] Executed endpoint 'Unitas.Service.Controllers.ExcelController.UpdateAndReadExcel (Unitas.Service)'
+2025-10-12 11:14:19.308 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:8801/api/Excel/update-excel - 400 null application/problem+json; charset=utf-8 3.3311ms
+2025-10-12 11:15:17.214 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:8801/api/Excel/update-excel - application/json 930
+2025-10-12 11:15:17.214 +05:30 [INF] Executing endpoint 'Unitas.Service.Controllers.ExcelController.UpdateAndReadExcel (Unitas.Service)'
+2025-10-12 11:15:17.214 +05:30 [INF] Route matched with {action = "UpdateAndReadExcel", controller = "Excel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateAndReadExcel(System.Collections.Generic.List`1[Unitas.Service.Model.RequestModel]) on controller Unitas.Service.Controllers.ExcelController (Unitas.Service).
+2025-10-12 11:15:23.062 +05:30 [INF] Copied file to: D:\Application\Kausar Ansari\Unitas\Source\Services\Unitas.Service\wwwroot\Upload\Templates\execute\Unitas_b8b5210d-914a-4dcd-9473-e220597cd665.xlsx
+2025-10-12 11:15:26.613 +05:30 [INF] Updated cell F19 in sheet New with value 'Fix & Flip / Fix & Hold'
+2025-10-12 11:15:27.414 +05:30 [INF] Updated cell C16 in sheet New with value 'Single Family'
+2025-10-12 11:15:27.911 +05:30 [INF] Updated cell F20 in sheet New with value 'Purchase'
+2025-10-12 11:15:28.398 +05:30 [INF] Updated cell C21 in sheet New with value '1500000'
+2025-10-12 11:15:28.856 +05:30 [INF] Updated cell C24 in sheet New with value '2500000'
+2025-10-12 11:15:29.307 +05:30 [INF] Updated cell F23 in sheet New with value '25000'
+2025-10-12 11:15:29.756 +05:30 [INF] Updated cell F22 in sheet New with value '1000000'
+2025-10-12 11:15:30.191 +05:30 [INF] Updated cell F12 in sheet New with value '13'
+2025-10-12 11:15:30.635 +05:30 [INF] Updated cell F13 in sheet New with value '743'
+2025-10-12 11:15:31.074 +05:30 [INF] Updated cell F27 in sheet New with value '18'
+2025-10-12 11:15:31.213 +05:30 [INF] Successfully read section data from: D:\Application\Kausar Ansari\Unitas\Source\Services\Unitas.Service\wwwroot\Upload\Templates\execute\Unitas_b8b5210d-914a-4dcd-9473-e220597cd665.xlsx
+2025-10-12 11:15:31.213 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[Unitas.Framework.ExcelKeyValue, Unitas.Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-12 11:15:31.216 +05:30 [INF] Executed action Unitas.Service.Controllers.ExcelController.UpdateAndReadExcel (Unitas.Service) in 14001.3368ms
+2025-10-12 11:15:31.216 +05:30 [INF] Executed endpoint 'Unitas.Service.Controllers.ExcelController.UpdateAndReadExcel (Unitas.Service)'
+2025-10-12 11:15:31.216 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:8801/api/Excel/update-excel - 200 null application/json; charset=utf-8 14003.8203ms
+2025-10-12 11:31:27.734 +05:30 [WRN] Overriding address(es) 'http://localhost:8801'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-10-12 11:31:27.786 +05:30 [INF] Now listening on: http://localhost:8801
+2025-10-12 11:31:27.803 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-12 11:31:27.803 +05:30 [INF] Hosting environment: Development
+2025-10-12 11:31:27.803 +05:30 [INF] Content root path: D:\Application\Kausar Ansari\Unitas\Source\Services\Unitas.Service
+2025-10-12 11:31:28.669 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:8801/ - null null
+2025-10-12 11:31:28.877 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:8801/ - 404 0 null 220.145ms
+2025-10-12 11:31:28.879 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:8801/, Response status code: 404
+2025-10-12 11:33:47.757 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:8801/api/Excel/update-excel - application/json 930
+2025-10-12 11:33:47.763 +05:30 [INF] Executing endpoint 'Unitas.Service.Controllers.ExcelController.UpdateAndReadExcel (Unitas.Service)'
+2025-10-12 11:33:47.804 +05:30 [INF] Route matched with {action = "UpdateAndReadExcel", controller = "Excel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateAndReadExcel(System.Collections.Generic.List`1[Unitas.Service.Model.RequestModel]) on controller Unitas.Service.Controllers.ExcelController (Unitas.Service).
+2025-10-12 11:33:55.299 +05:30 [INF] Copied file to: D:\Application\Kausar Ansari\Unitas\Source\Services\Unitas.Service\wwwroot\Upload\Templates\execute\Unitas_880a64fd-83ff-45cd-953a-f584d8222b6b.xlsx
+2025-10-12 11:33:59.033 +05:30 [INF] Updated cell F19 in sheet New with value 'Fix & Flip / Fix & Hold'
+2025-10-12 11:33:59.836 +05:30 [INF] Updated cell C16 in sheet New with value 'Single Family'
+2025-10-12 11:34:00.345 +05:30 [INF] Updated cell F20 in sheet New with value 'Purchase'
+2025-10-12 11:34:00.806 +05:30 [INF] Updated cell C21 in sheet New with value '1500000'
+2025-10-12 11:34:01.283 +05:30 [INF] Updated cell C24 in sheet New with value '2500000'
+2025-10-12 11:34:01.730 +05:30 [INF] Updated cell F23 in sheet New with value '25000'
+2025-10-12 11:34:02.167 +05:30 [INF] Updated cell F22 in sheet New with value '1000000'
+2025-10-12 11:34:02.590 +05:30 [INF] Updated cell F12 in sheet New with value '12'
+2025-10-12 11:34:03.027 +05:30 [INF] Updated cell F13 in sheet New with value '741'
+2025-10-12 11:34:03.453 +05:30 [INF] Updated cell F27 in sheet New with value '18'
+2025-10-12 11:34:03.600 +05:30 [INF] Successfully read section data from: D:\Application\Kausar Ansari\Unitas\Source\Services\Unitas.Service\wwwroot\Upload\Templates\execute\Unitas_880a64fd-83ff-45cd-953a-f584d8222b6b.xlsx
+2025-10-12 11:34:03.603 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[Unitas.Framework.ExcelKeyValue, Unitas.Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-12 11:34:03.613 +05:30 [INF] Executed action Unitas.Service.Controllers.ExcelController.UpdateAndReadExcel (Unitas.Service) in 15806.6876ms
+2025-10-12 11:34:03.613 +05:30 [INF] Executed endpoint 'Unitas.Service.Controllers.ExcelController.UpdateAndReadExcel (Unitas.Service)'
+2025-10-12 11:34:03.613 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:8801/api/Excel/update-excel - 200 null application/json; charset=utf-8 15856.3351ms
+2025-10-12 11:36:26.109 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8801/api/Excel/update-excel - null null
+2025-10-12 11:36:26.111 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-10-12 11:36:26.111 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-10-12 11:36:26.111 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8801/api/Excel/update-excel - 405 0 null 2.1526ms
+2025-10-12 17:16:38.531 +05:30 [WRN] Overriding address(es) 'http://localhost:8801'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-10-12 17:16:38.563 +05:30 [INF] Now listening on: http://localhost:8801
+2025-10-12 17:16:38.578 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-12 17:16:38.578 +05:30 [INF] Hosting environment: Development
+2025-10-12 17:16:38.578 +05:30 [INF] Content root path: D:\Application\Kausar Ansari\Unitas\Source\Services\Unitas.Service
+2025-10-12 17:16:38.838 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:8801/ - null null
+2025-10-12 17:16:38.938 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:8801/ - 404 0 null 104.6392ms
+2025-10-12 17:16:38.939 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:8801/, Response status code: 404
+2025-10-12 17:16:51.724 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:8801/api/Excel/update-excel - application/json 930
+2025-10-12 17:16:51.727 +05:30 [INF] Executing endpoint 'Unitas.Service.Controllers.ExcelController.UpdateAndReadExcel (Unitas.Service)'
+2025-10-12 17:16:51.741 +05:30 [INF] Route matched with {action = "UpdateAndReadExcel", controller = "Excel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateAndReadExcel(System.Collections.Generic.List`1[Unitas.Service.Model.RequestModel]) on controller Unitas.Service.Controllers.ExcelController (Unitas.Service).
+2025-10-12 17:16:54.932 +05:30 [INF] Copied file to: D:\Application\Kausar Ansari\Unitas\Source\Services\Unitas.Service\wwwroot\Upload\Templates\execute\Unitas_9aed5bc6-5ace-47f9-b99d-1e2b17b429d7.xlsx
+2025-10-12 17:16:55.651 +05:30 [INF] UpdateAndRecalculate'Cannot find license 'Aspose.Cells.lic'.:   at d.(Exception )
+   at d.(Object )
+   at d.(d ,  )
+   at d.()
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Int32 , Type[] , Type[] , Boolean )
+   at d.(d ,  )
+   at d.()
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Int32 , Type[] , Type[] , Boolean )
+   at d.(d ,  )
+   at d.()
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Stream , String , Object[] , Type[] , Type[] , Object[] )
+   at Aspose.Cells.License.SetLicense(String licenseName)
+   at ExcelServiceManager.UpdateAndRecalculate(String filePath, String sheetName, String cellRef, String newValue) in D:\Application\Kausar Ansari\Unitas\Source\Framework\Unitas.Framework\ExcelServiceManager.cs:line 23'
+2025-10-12 17:16:55.651 +05:30 [INF] Updated cell F19 in sheet New with value 'Fix & Flip / Fix & Hold'
+2025-10-12 17:16:55.669 +05:30 [INF] UpdateAndRecalculate'Cannot find license 'Aspose.Cells.lic'.:   at d.(Exception )
+   at d.(Object )
+   at d.(d ,  )
+   at d.()
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Int32 , Type[] , Type[] , Boolean )
+   at d.(d ,  )
+   at d.()
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Int32 , Type[] , Type[] , Boolean )
+   at d.(d ,  )
+   at d.()
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Stream , String , Object[] , Type[] , Type[] , Object[] )
+   at Aspose.Cells.License.SetLicense(String licenseName)
+   at ExcelServiceManager.UpdateAndRecalculate(String filePath, String sheetName, String cellRef, String newValue) in D:\Application\Kausar Ansari\Unitas\Source\Framework\Unitas.Framework\ExcelServiceManager.cs:line 23'
+2025-10-12 17:16:55.669 +05:30 [INF] Updated cell C16 in sheet New with value 'Single Family'
+2025-10-12 17:16:55.686 +05:30 [INF] UpdateAndRecalculate'Cannot find license 'Aspose.Cells.lic'.:   at d.(Exception )
+   at d.(Object )
+   at d.(d ,  )
+   at d.()
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Int32 , Type[] , Type[] , Boolean )
+   at d.(d ,  )
+   at d.()
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Int32 , Type[] , Type[] , Boolean )
+   at d.(d ,  )
+   at d.()
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Stream , String , Object[] , Type[] , Type[] , Object[] )
+   at Aspose.Cells.License.SetLicense(String licenseName)
+   at ExcelServiceManager.UpdateAndRecalculate(String filePath, String sheetName, String cellRef, String newValue) in D:\Application\Kausar Ansari\Unitas\Source\Framework\Unitas.Framework\ExcelServiceManager.cs:line 23'
+2025-10-12 17:16:55.687 +05:30 [INF] Updated cell F20 in sheet New with value 'Purchase'
+2025-10-12 17:16:55.704 +05:30 [INF] UpdateAndRecalculate'Cannot find license 'Aspose.Cells.lic'.:   at d.(Exception )
+   at d.(Object )
+   at d.(d ,  )
+   at d.()
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Int32 , Type[] , Type[] , Boolean )
+   at d.(d ,  )
+   at d.()
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Int32 , Type[] , Type[] , Boolean )
+   at d.(d ,  )
+   at d.()
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Stream , String , Object[] , Type[] , Type[] , Object[] )
+   at Aspose.Cells.License.SetLicense(String licenseName)
+   at ExcelServiceManager.UpdateAndRecalculate(String filePath, String sheetName, String cellRef, String newValue) in D:\Application\Kausar Ansari\Unitas\Source\Framework\Unitas.Framework\ExcelServiceManager.cs:line 23'
+2025-10-12 17:16:55.704 +05:30 [INF] Updated cell C21 in sheet New with value '1500000'
+2025-10-12 17:16:55.725 +05:30 [INF] UpdateAndRecalculate'Cannot find license 'Aspose.Cells.lic'.:   at d.(Exception )
+   at d.(Object )
+   at d.(d ,  )
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Int32 , Type[] , Type[] , Boolean )
+   at d.(d ,  )
+   at d.()
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Int32 , Type[] , Type[] , Boolean )
+   at d.(d ,  )
+   at d.()
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Stream , String , Object[] , Type[] , Type[] , Object[] )
+   at Aspose.Cells.License.SetLicense(String licenseName)
+   at ExcelServiceManager.UpdateAndRecalculate(String filePath, String sheetName, String cellRef, String newValue) in D:\Application\Kausar Ansari\Unitas\Source\Framework\Unitas.Framework\ExcelServiceManager.cs:line 23'
+2025-10-12 17:16:55.725 +05:30 [INF] Updated cell C24 in sheet New with value '2500000'
+2025-10-12 17:16:55.742 +05:30 [INF] UpdateAndRecalculate'Cannot find license 'Aspose.Cells.lic'.:   at d.(Exception )
+   at d.(Object )
+   at d.(d ,  )
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Int32 , Type[] , Type[] , Boolean )
+   at d.(d ,  )
+   at d.()
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Int32 , Type[] , Type[] , Boolean )
+   at d.(d ,  )
+   at d.()
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Stream , String , Object[] , Type[] , Type[] , Object[] )
+   at Aspose.Cells.License.SetLicense(String licenseName)
+   at ExcelServiceManager.UpdateAndRecalculate(String filePath, String sheetName, String cellRef, String newValue) in D:\Application\Kausar Ansari\Unitas\Source\Framework\Unitas.Framework\ExcelServiceManager.cs:line 23'
+2025-10-12 17:16:55.742 +05:30 [INF] Updated cell F23 in sheet New with value '25000'
+2025-10-12 17:16:55.758 +05:30 [INF] UpdateAndRecalculate'Cannot find license 'Aspose.Cells.lic'.:   at d.(Exception )
+   at d.(Object )
+   at d.(d ,  )
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Int32 , Type[] , Type[] , Boolean )
+   at d.(d ,  )
+   at d.()
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Int32 , Type[] , Type[] , Boolean )
+   at d.(d ,  )
+   at d.()
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Stream , String , Object[] , Type[] , Type[] , Object[] )
+   at Aspose.Cells.License.SetLicense(String licenseName)
+   at ExcelServiceManager.UpdateAndRecalculate(String filePath, String sheetName, String cellRef, String newValue) in D:\Application\Kausar Ansari\Unitas\Source\Framework\Unitas.Framework\ExcelServiceManager.cs:line 23'
+2025-10-12 17:16:55.758 +05:30 [INF] Updated cell F22 in sheet New with value '1000000'
+2025-10-12 17:16:55.774 +05:30 [INF] UpdateAndRecalculate'Cannot find license 'Aspose.Cells.lic'.:   at d.(Exception )
+   at d.(Object )
+   at d.(d ,  )
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Int32 , Type[] , Type[] , Boolean )
+   at d.(d ,  )
+   at d.()
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Int32 , Type[] , Type[] , Boolean )
+   at d.(d ,  )
+   at d.()
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Stream , String , Object[] , Type[] , Type[] , Object[] )
+   at Aspose.Cells.License.SetLicense(String licenseName)
+   at ExcelServiceManager.UpdateAndRecalculate(String filePath, String sheetName, String cellRef, String newValue) in D:\Application\Kausar Ansari\Unitas\Source\Framework\Unitas.Framework\ExcelServiceManager.cs:line 23'
+2025-10-12 17:16:55.774 +05:30 [INF] Updated cell F12 in sheet New with value '12'
+2025-10-12 17:16:55.790 +05:30 [INF] UpdateAndRecalculate'Cannot find license 'Aspose.Cells.lic'.:   at d.(Exception )
+   at d.(Object )
+   at d.(d ,  )
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Int32 , Type[] , Type[] , Boolean )
+   at d.(d ,  )
+   at d.()
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Int32 , Type[] , Type[] , Boolean )
+   at d.(d ,  )
+   at d.()
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Stream , String , Object[] , Type[] , Type[] , Object[] )
+   at Aspose.Cells.License.SetLicense(String licenseName)
+   at ExcelServiceManager.UpdateAndRecalculate(String filePath, String sheetName, String cellRef, String newValue) in D:\Application\Kausar Ansari\Unitas\Source\Framework\Unitas.Framework\ExcelServiceManager.cs:line 23'
+2025-10-12 17:16:55.790 +05:30 [INF] Updated cell F13 in sheet New with value '741'
+2025-10-12 17:16:55.807 +05:30 [INF] UpdateAndRecalculate'Cannot find license 'Aspose.Cells.lic'.:   at d.(Exception )
+   at d.(Object )
+   at d.(d ,  )
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Int32 , Type[] , Type[] , Boolean )
+   at d.(d ,  )
+   at d.()
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Int32 , Type[] , Type[] , Boolean )
+   at d.(d ,  )
+   at d.()
+   at d.(Boolean )
+--- End of stack trace from previous location ---
+   at d.(Exception )
+   at d.(Object )
+   at d.()
+   at d.(Object , UInt32 )
+   at d.(Boolean )
+   at d.(Object[] , Type[] , Type[] , Object[] )
+   at d.(Stream , String , Object[] , Type[] , Type[] , Object[] )
+   at Aspose.Cells.License.SetLicense(String licenseName)
+   at ExcelServiceManager.UpdateAndRecalculate(String filePath, String sheetName, String cellRef, String newValue) in D:\Application\Kausar Ansari\Unitas\Source\Framework\Unitas.Framework\ExcelServiceManager.cs:line 23'
+2025-10-12 17:16:55.807 +05:30 [INF] Updated cell F27 in sheet New with value '18'
+2025-10-12 17:16:58.015 +05:30 [INF] Successfully read section data from: D:\Application\Kausar Ansari\Unitas\Source\Services\Unitas.Service\wwwroot\Upload\Templates\execute\Unitas_9aed5bc6-5ace-47f9-b99d-1e2b17b429d7.xlsx
+2025-10-12 17:16:58.018 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[Unitas.Framework.ExcelKeyValue, Unitas.Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-12 17:16:58.024 +05:30 [INF] Executed action Unitas.Service.Controllers.ExcelController.UpdateAndReadExcel (Unitas.Service) in 6281.058ms
+2025-10-12 17:16:58.024 +05:30 [INF] Executed endpoint 'Unitas.Service.Controllers.ExcelController.UpdateAndReadExcel (Unitas.Service)'
+2025-10-12 17:16:58.024 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:8801/api/Excel/update-excel - 200 null application/json; charset=utf-8 6300.932ms
+2025-10-12 17:17:08.143 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:8801/api/Excel/update-excel - application/json 930
+2025-10-12 17:17:08.145 +05:30 [INF] Executing endpoint 'Unitas.Service.Controllers.ExcelController.UpdateAndReadExcel (Unitas.Service)'
+2025-10-12 17:17:08.145 +05:30 [INF] Route matched with {action = "UpdateAndReadExcel", controller = "Excel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateAndReadExcel(System.Collections.Generic.List`1[Unitas.Service.Model.RequestModel]) on controller Unitas.Service.Controllers.ExcelController (Unitas.Service).
+2025-10-12 17:17:12.842 +05:30 [INF] Copied file to: D:\Application\Kausar Ansari\Unitas\Source\Services\Unitas.Service\wwwroot\Upload\Templates\execute\Unitas_52d71773-b833-417e-ac23-afe300d4b61b.xlsx
+2025-10-12 17:19:57.504 +05:30 [WRN] Overriding address(es) 'http://localhost:8801'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-10-12 17:19:57.541 +05:30 [INF] Now listening on: http://localhost:8801
+2025-10-12 17:19:57.558 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-12 17:19:57.558 +05:30 [INF] Hosting environment: Development
+2025-10-12 17:19:57.558 +05:30 [INF] Content root path: D:\Application\Kausar Ansari\Unitas\Source\Services\Unitas.Service
+2025-10-12 17:19:58.053 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:8801/ - null null
+2025-10-12 17:19:58.131 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:8801/ - 404 0 null 81.0856ms
+2025-10-12 17:19:58.132 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:8801/, Response status code: 404
+2025-10-12 17:20:01.615 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:8801/api/Excel/update-excel - application/json 930
+2025-10-12 17:20:01.617 +05:30 [INF] Executing endpoint 'Unitas.Service.Controllers.ExcelController.UpdateAndReadExcel (Unitas.Service)'
+2025-10-12 17:20:01.629 +05:30 [INF] Route matched with {action = "UpdateAndReadExcel", controller = "Excel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateAndReadExcel(System.Collections.Generic.List`1[Unitas.Service.Model.RequestModel]) on controller Unitas.Service.Controllers.ExcelController (Unitas.Service).
+2025-10-12 17:20:07.984 +05:30 [INF] Copied file to: D:\Application\Kausar Ansari\Unitas\Source\Services\Unitas.Service\wwwroot\Upload\Templates\execute\Unitas_ca2e7cb6-e05b-4fb5-a8d0-ba20e4e07256.xlsx

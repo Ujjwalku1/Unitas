@@ -1,9 +1,20 @@
+﻿using Serilog;
 using Unitas.Framework;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Set log file path inside wwwroot
+var logFilePath = Path.Combine(builder.Environment.WebRootPath, "logs", "log-.txt");
 
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.File(logFilePath, rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+
+builder.Host.UseSerilog();
+
+
+// Add services to the container.
+ 
 builder.Services.AddControllers();
 
 builder.Services.AddScoped<ExcelService>();
@@ -24,5 +35,10 @@ if (app.Environment.IsDevelopment())
 app.UseAuthorization();
 
 app.MapControllers();
-
+app.UseCors(
+       options => options
+        .AllowAnyOrigin()
+        .AllowAnyMethod()
+        .AllowAnyHeader()
+      );
 app.Run();
